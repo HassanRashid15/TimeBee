@@ -1,7 +1,11 @@
 @import url('https://fonts.googleapis.com/css2?family=Work+Sans:wght@300;400;500;600;700&display=swap');
 
+html{
+    overflow-x: hidden;
+}
 body {
     font-family: 'Work Sans', sans-serif;
+    overflow-x: hidden;
 }
 
 .navbar-brand {
@@ -13,20 +17,21 @@ body {
     margin-right: 5px;
 }
 .nav-link {
-    color: white !important;
-    font-weight: 500;
+      font-weight: 500;
 }
 .btn-trial {
     background-color: #C779E7;    border: none;
     color: white;
     height: 55px;
-    font-weight: normal;
+font-weight: 400;
+font-size: 14px;
 }
 .btn-signin {
     background-color: #E50695;
     border: none;
     color: white;
-    font-weight:normal;
+font-weight: 400;
+font-size: 14px;
 }
 .btn-trial:hover {
     background-color: #C779E7;
@@ -93,15 +98,21 @@ body {
     background-color: #A961C4; 
     padding: 80px 0;
 }
+
 .hero-content h1 {
-    font-size: 2.5rem;
-    font-weight: bold;
-    color: #333;
+ font-weight: 600;
+    font-size: 50px;
+    line-height: 57px;
 }
 .hero-content p {
-    font-size: 1.1rem;
-    color: #555;
     margin: 20px 0;
+font-weight: 500;
+font-size: 18px;
+}
+.track-timecontent{
+        font-weight: 400 !important;
+    font-size: 15px !important;
+    max-width: 88%;
 }
 .btn-primary {
     background-color: #007bff;
@@ -116,6 +127,10 @@ body {
 }
 .btn-secondary:hover {
     background-color: #495057;
+}
+.hero-text h1{
+font-weight: 600;
+font-size: 43px;
 }
 .hero-img img {
     max-width: 100%;
@@ -147,7 +162,6 @@ body {
     flex-direction: row;
     justify-content: flex-start;
     align-items: center;
-    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
 }
 
 .large-card { min-height: 250px; }
@@ -173,12 +187,24 @@ body {
     text-align: center;
 }
 .hero-text {
-    max-width: 700px;
+    max-width: 800px;
     margin: 0 auto;
 }
+.remote-workcontent h1{  font-weight: 600;
+    font-size: 54px;
+    line-height: 64px;
+    }
+    .remote-workcontent p{
+font-weight: 400;
+font-size: 16px;
+    max-width: 990px;
+    margin:1.7rem auto !important;
+    }
 .hero-text p {
+font-weight: 400;
+font-size: 16px;
+margin-top: 27px;
     color: #666;
-    font-size: 18px;
 }
 .stats-card {
     background: white;
@@ -187,14 +213,20 @@ body {
     box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1);
     text-align: left;
 }
+.stats-card-custom{
+    box-shadow: none !important;
+}
 .stats-card h3 {
-    font-size: 20px;
-    font-weight: bold;
-    color: #333;
+font-weight: 600;
+line-height: 30px;
+font-size: 20px;
+    color: #000000;
 }
 .stats-card p {
-    color: #555;
+    color: #000000;
+    font-weight: 400;
     font-size: 16px;
+     line-height: 26px;
     margin-bottom: 0px;
 }
 .icon-circle {
@@ -202,16 +234,29 @@ body {
     height: 50px; /* Fixed height */
     min-width: 50px; /* Prevent shrinking */
     min-height: 50px; /* Prevent shrinking */
-    background: #dcd6f7;
+    background: #e9d6f0;
     border-radius: 50%;
     display: flex;
     align-items: center;
     justify-content: center;
     font-size: 22px;
-    color: #5a4fcf;
+    color: #A961C4;
     flex-shrink: 0; /* Prevents it from shrinking in flex containers */
 }
 
+.slide-content p{
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 26px;
+    margin-top: 6px;
+    color: #000;
+}
+.slide-content h2{
+font-weight: 600;
+font-size: 24px;
+line-height: 33px;
+color: #000;
+}
 .graph-card {
     padding: 20px;
     border-radius: 15px;
@@ -253,7 +298,7 @@ body {
 }
 .div1 { 
     grid-area: 1 / 1 / 5 / 3; 
-    background: linear-gradient(to right, #9c27b0, #7b1fa2);
+    background: #C779E7;
     place-items: center;
 }
 .div2 { 
@@ -264,11 +309,11 @@ body {
 }
 .div3 { 
     grid-area: 3 / 3 / 5 / 7; 
-    background: linear-gradient(to right, #673ab7, #5e35b1);
+    background: #eb926c;
 }
 .div4 { 
     grid-area: 1 / 6 / 3 / 10; 
-    background: linear-gradient(to right, #ff9800, #f57c00);
+    background:#895ef6;
 }
 .div5 { 
     grid-area: 3 / 7 / 5 / 10; 
@@ -281,14 +326,15 @@ body {
     background: linear-gradient(to right, #e91e63, #c2185b);
 }
 .stat {
-    font-size: 2rem;
-    font-weight: bold;
+  font-weight: 600;
+    font-size: 54px;
     margin: 8px 0;
 }
 .description {
-    font-size: 0.8rem;
-    line-height: 1.4;
-    opacity: 0.8;
+      font-weight: 400;
+    font-size: 16px;
+    line-height: 26px;
+    color: white;
 }
 .small-title {
     font-size: 0.7rem;
@@ -344,7 +390,7 @@ body {
 .slick-next{
     position: absolute;
     z-index: 333;
-    right: 136px;
+    right: 0px;
 }
 .slick-prev{
     z-index: 222;
@@ -393,10 +439,10 @@ body {
     height: auto;
 }
 .slide-content {
-    flex: 1;
+flex: 1;
     padding: 20px;
     background-color: white;
-    right: 136px;
+    right: 0px;
     border: 1px solid #4D58E2;
     border-radius: 20px;
     position: absolute;
@@ -405,8 +451,8 @@ body {
 ;
     flex-direction: column;
     justify-content: center;
-    max-width: 40%;
-    box-shadow: -10px 0 15px rgba(0, 0, 0, 0.2); /* Left-side shadow */
+    max-width: 52%;
+    box-shadow: -10px 0 15px rgba(0, 0, 0, 0.2);
 }
 
 @media (max-width: 992px) {
@@ -470,8 +516,27 @@ justify-content: space-between;
 }
 .futuristic-content-section h1{
     text-align: center;
-    max-width: 63%;
-    margin: auto;slide-image
+    font-size: 54px;
+    max-width: 81%;
+    color: #000;
+    margin:25px auto;
+}
+.small-title {
+    font-weight: 600;
+    color: white;
+    font-size: 16px;
+}
+.bookingbox {
+    background: rgba(255, 255, 255, 0.1); /* Transparent white with slight opacity */
+    backdrop-filter: blur(10px); /* Blur effect for glassmorphism */
+    -webkit-backdrop-filter: blur(10px); /* For Safari support */
+    border: 2px solid rgba(255, 255, 255, 0.2); /* Subtle border for definition */
+    width: 130px;
+    height: 45px;
+    border-radius: 13px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 @media (max-width: 992px) { /* Adjust breakpoint as needed */
     .custom-responsive-class {
@@ -495,4 +560,107 @@ justify-content: space-between;
     max-width: 96%;
 }
 }
+@media (max-width: 992px) { /* Adjust breakpoint as needed */
+ #navbarNav{
+    background-color: white;
+    padding: 15px;
+}
+}
 
+
+.dropdown-toggle{
+    color: black;
+}
+/* Default (Desktop) - White Links */
+.navbar-nav .nav-link {
+    color: white !important;
+}
+
+/* Responsive (Mobile) - Black Links */
+@media (max-width: 991px) {
+    .navbar-nav .nav-link {
+        color: black !important;
+    }
+}
+@media (max-width: 576px) {
+  .hero-content h1 ,.hero-text h1 , .remote-workcontent h1 ,.futuristic-content-section h1{
+        font-size: 1.5rem; /* Adjust as needed */
+        line-height: 30px;
+    }
+}
+
+    .navbar-toggler.custom-toggler {
+        border: none;
+        padding: 0;
+        width: 30px;
+        height: 30px;
+        position: relative;
+        transition: .5s ease-in-out;
+        outline: none !important;
+        box-shadow: none !important;
+    }
+    
+    .navbar-toggler.custom-toggler:focus {
+        outline: none;
+        box-shadow: none;
+    }
+    
+    /* Hamburger icon with custom class */
+    .hamburger-icon.custom-hamburger {
+        width: 30px;
+        height: 24px;
+        position: relative;
+        margin: 0;
+        transform: rotate(0deg);
+        transition: .5s ease-in-out;
+        cursor: pointer;
+    }
+    
+    .hamburger-icon.custom-hamburger span {
+        display: block;
+        position: absolute;
+        height: 3px;
+        width: 100%;
+        /* You can customize the color here */
+        background: white; 
+        border-radius: 9px;
+        opacity: 1;
+        left: 0;
+        transform: rotate(0deg);
+        transition: .25s ease-in-out;
+    }
+    
+    .hamburger-icon.custom-hamburger span:nth-child(1) {
+        top: 0px;
+    }
+    
+    .hamburger-icon.custom-hamburger span:nth-child(2),
+    .hamburger-icon.custom-hamburger span:nth-child(3) {
+        top: 10px;
+    }
+    
+    .hamburger-icon.custom-hamburger span:nth-child(4) {
+        top: 20px;
+    }
+    
+    /* Animation styles */
+    .hamburger-icon.custom-hamburger.open span:nth-child(1) {
+        top: 10px;
+        width: 0%;
+        left: 50%;
+    }
+    
+    .hamburger-icon.custom-hamburger.open span:nth-child(2) {
+        transform: rotate(45deg);
+    }
+    
+    .hamburger-icon.custom-hamburger.open span:nth-child(3) {
+        transform: rotate(-45deg);
+    }
+    
+    .hamburger-icon.custom-hamburger.open span:nth-child(4) {
+        top: 10px;
+        width: 0%;
+        left: 50%;
+    }
+    
